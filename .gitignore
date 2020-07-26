@@ -7,6 +7,7 @@ venv/
 __pycache__/
 *.py[cod]
 
+.env
 .idea
 *.env
 .DS_Store
