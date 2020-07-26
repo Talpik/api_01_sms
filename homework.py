@@ -32,10 +32,10 @@ def sms_sender(sms_text):
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-                              body=sms_text,
-                              from_=NUMBER_FROM,
-                              to=NUMBER_TO
-                          )
+        body=sms_text,
+        from_=NUMBER_FROM,
+        to=NUMBER_TO
+    )
     return message.sid
 
 
